@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <center>
+        <h3>Mini Calculator</h3>
+    </head>
+    <body>
+        <p id="b1">Enter First Number</p>
+        <input type="number" >
+        <p id="b2"> Enter Second Number</p>
+        <input type="number">
+        <br><br>
+        <button type="button" onclick="add()"> Add</button>
+        <button type="button" onclick="sub()">Subtract</button>
+        <button type="button" onclick="multi()">Multiply</button>
+        <button type="button" onclick="divide()">Divide</button>
+        <p id="result"> 0</p>
+        <script>
+            function add(){
+                var result=0
+                result=Number(document.getElementById("b1").value)+
+                Number(document.getElementById("b2").value);
+                document.getElementById("result").innerHTML=result
+            }
+            function sub(){
+                var result=0
+                result=Number(document.getElementById("b1").value)-
+                Number(document.getElementById("b2").value);
+                document.getElementById("result").innerHTML=result
+            }
+            function sub(){
+                var result=0
+                result=Number(document.getElementById("b1").value)*
+                Number(document.getElementById("b2").value);
+                document.getElementById("result").innerHTML=result
+            }
+            function divide(){
+                var result=0
+                result=Number(document.getElementById("b1").value)/
+                Number(document.getElementById("b2").value);
+                document.getElementById("result").innerHTML=result
+            }
+        
+        </script>
+        
+        </center>
+    </body>
+</html>
